@@ -25,4 +25,4 @@ class LSTM(nn.Module):
         # x = hn.squeeze(0)   # 移除 seq_len 维度，以匹配全连接层的输入期望
         out = self.fc(x)
         # return self.softmax(out) if is_multi else self.sigmod(out)
-        return x
+        return out

@@ -38,7 +38,7 @@ if __name__ == '__main__':
         raise ValueError(f'Model {model_name} not available.')
 
     # 计算评估指标
-    precision, recall, f1, _ = precision_recall_fscore_support(y_test, y_pred, average="weighted" if args.is_multi else "binary", zero_division=0)
+    precision, recall, f1, _ = precision_recall_fscore_support(y_test, y_pred, average="weighted" , zero_division=0)
     accuracy = accuracy_score(y_test, y_pred)
     
 
